@@ -5,7 +5,7 @@
 |---|---|
 | **Scenario** | Option A – Online Payment Processing Application |
 | **Assignment** | Assignment 1 – Secure Architecture & Threat Modeling |
-| **Submitted** | February 2026 |
+
 
 ---
 
@@ -69,7 +69,6 @@ The application is internet-facing, assumed to be accessible at scale, and is de
 | Core Banking System | Performs final settlement and fund transfer between accounts. |
 | Email / SMS Service Provider | Delivers transaction confirmations, fraud alerts, and authentication codes to users. |
 
-Each of these external integrations introduces an additional trust boundary and associated security risks including availability dependency, supply chain risk, and the inability to audit external party controls directly.
 
 ---
 
@@ -365,7 +364,7 @@ No single control eliminates any threat completely. Each High-risk threat is add
 
 ![Secure Architecture Diagram](./secure_architecture_diagram.png)
 
-The updated architecture incorporates all security controls defined in sections 4.1–4.6: WAF at the public entry point, MFA and RBAC on all authentication flows, mTLS with certificate pinning on external connections, append-only logging, a centralized Secrets Vault, and an isolated Admin Zone accessible only via VPN.
+
 
 ---
 
@@ -446,7 +445,7 @@ The resulting architecture operates on a zero-trust assumption — all actors, i
 ### Base System Architecture
 ![High-Level System Architecture Diagram](Task%201/image.png)
 
-Shows all system components, security zones (Public, Application, Data, Admin, External Systems), and encrypted data flows between them.
+
 
 ### Threat Surface Diagram
 ![Threat Surface Diagram](./threat_surface_diagram.png)
@@ -456,7 +455,7 @@ Annotates the base architecture with five threat surfaces (TS1–TS5), identifyi
 ### Secure Architecture Diagram
 ![Secure Architecture Diagram](./secure_architecture_diagram.png)
 
-Updated architecture incorporating all security controls: WAF at public entry, MFA and RBAC on all auth flows, HMAC callback validation, mTLS on all external channels, append-only centralized logging with UEBA alerting, separate admin auth plane, AES-256 encryption at rest with separately stored keys, and a Secrets Vault injecting runtime credentials.
+
 
 ---
 
@@ -537,3 +536,4 @@ Full risk treatment decisions are documented in Task 5. Three residual risk cate
 *Cyber Security Assignment 1 — Secure Architecture Design and Threat Modeling*
 *Scenario: Option A — Online Payment Processing Application*
 *February 2026*
+
