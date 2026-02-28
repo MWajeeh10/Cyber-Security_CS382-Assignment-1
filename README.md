@@ -97,7 +97,7 @@ Trust boundaries define points where data crosses between security zones, requir
 
 ## 1.7 Architecture Diagram
 
-![High-Level System Architecture Diagram](Task%201/image.png)
+![High-Level System Architecture Diagram](image.png)
 
 The diagram illustrates all system components, security zones, and encrypted data flows between the Public Zone, Application Zone, Data Zone, Admin Zone, and External Systems Zone. All communication is over HTTPS/TLS or Mutual TLS.
 
@@ -172,7 +172,7 @@ Threat modeling was conducted using the STRIDE framework, covering all six requi
 
 ## 3.2 Threat Surface Diagram
 
-![Threat Surface Diagram](./threat_surface_diagram.png)
+![Threat Surface Diagram](threat_surface_diagram.png)
 
 The diagram annotates the base architecture with five threat surfaces (TS1–TS5), indicating the components targeted by each threat category.
 
@@ -536,4 +536,5 @@ Full risk treatment decisions are documented in Task 5. Three residual risk cate
 *Cyber Security Assignment 1 — Secure Architecture Design and Threat Modeling*
 *Scenario: Option A — Online Payment Processing Application*
 *February 2026*
+
 
