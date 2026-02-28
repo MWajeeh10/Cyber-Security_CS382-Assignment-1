@@ -443,7 +443,7 @@ The resulting architecture operates on a zero-trust assumption — all actors, i
 ## 6.2 Architecture Diagrams
 
 ### Base System Architecture
-![High-Level System Architecture Diagram](Task%201/image.png)
+![High-Level System Architecture Diagram](image.png)
 
 
 
@@ -536,5 +536,6 @@ Full risk treatment decisions are documented in Task 5. Three residual risk cate
 *Cyber Security Assignment 1 — Secure Architecture Design and Threat Modeling*
 *Scenario: Option A — Online Payment Processing Application*
 *February 2026*
+
 
 
